@@ -46,6 +46,7 @@ LIVEKIT_URL=your_livekit_server_url
 LIVEKIT_API_KEY=your_livekit_api_key
 LIVEKIT_API_SECRET=your_livekit_api_secret
 STRIPE_SECRET_KEY=your_stripe_test_secret_key
+FFMPEG_PATH=path_to_ffmpeg_executable
 ```
 
 ## Run locally

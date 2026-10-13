@@ -20,7 +20,7 @@ const worker = new Worker(
     const outputPath = path.join(outputDirectory, `${lessonId}.mp4`);
 
     await execFileAsync(
-      "C:\\Users\\KARTHIK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.exe",
+    process.env.FFMPEG_PATH || "ffmpeg",
       [
         "-y",
         "-i",
