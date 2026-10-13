@@ -21,6 +21,11 @@ const lessonSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
+        videoStatus: {
+      type: String,
+      enum: ["not_uploaded", "queued", "processing", "ready", "failed"],
+      default: "not_uploaded",
+    },
   },
   { timestamps: true }
 );
